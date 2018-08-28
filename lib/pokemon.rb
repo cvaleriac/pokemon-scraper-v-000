@@ -18,5 +18,6 @@ class Pokemon
     result_set = statement.execute(id)
     results = result_set.collect do |row|
   end
+end
 
 end
