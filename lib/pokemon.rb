@@ -13,4 +13,9 @@ class Pokemon
     statement.execute(name,type)
   end
 
+  def self.find (id, db)
+    statement = db.prepare("SELECT * FROM pokemon WHERE id = ?")
+    result_set = statement.execute(id)
+  end
+
 end
